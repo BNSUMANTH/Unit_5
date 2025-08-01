@@ -1,0 +1,14 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "publishedYear": 1925,
+      "status": "Null",
+      "borrowedBy": "NA",
+      "borrowedDate": "NA"
+    }
+  ]
+}
