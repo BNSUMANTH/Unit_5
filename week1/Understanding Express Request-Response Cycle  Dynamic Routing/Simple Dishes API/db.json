@@ -1,0 +1,10 @@
+{
+    "Dishes": [
+        {
+            "id": 1,
+            "name": "samber chutteny",
+            "price": 50,
+            "category": "suamnry"
+        }
+    ]
+}
