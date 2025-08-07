@@ -1,14 +1,15 @@
-const mangoose = require("mongoose");
+const express = require("express");
+const ConnectToDB = require("./config/DBconnect");
+const taskRoutes = require("./routes/task.routes");
+ConnectToDB();
+const app = express();
 
-const connectToDb = async () => {
-    try {
-        await mangoose.connect("mongodb://127.0.0.1:27017/");
-        console.log("connected To DB");
+app.use(express.json());
 
-    } catch (err) {
-        console.log("error in connection ");
-        console.log(err);
-    }
-}
 
-connectToDb();
+app.use("/task",taskRoutes);
+
+app.listen(3000, () => {
+    console.log("server is started at port 3000....");
+})
+
